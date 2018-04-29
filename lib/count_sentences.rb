@@ -3,17 +3,27 @@ require 'pry'
 class String
 
   def sentence?
-    true if self.end_with?(".")
+    if self.end_with?(".")
+      true
+    else
+      false
+    end
   end
 
   def question?
-    true if self.end_with?("?")
-
+    if self.end_with?("?")
+      true
+    else
+      false
+    end
   end
 
   def exclamation?
-    true if self.end_with?("!")
-
+    if self.end_with?("!")
+      true
+    else
+      false
+    end
   end
 
   def count_sentences
